@@ -1,0 +1,6 @@
+[s027:195320] *** An error occurred in MPI_Scatter
+[s027:195320] *** reported by process [1006632961,0]
+[s027:195320] *** on communicator MPI COMMUNICATOR 5 SPLIT FROM 3
+[s027:195320] *** MPI_ERR_COUNT: invalid count argument
+[s027:195320] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[s027:195320] ***    and potentially your MPI job)

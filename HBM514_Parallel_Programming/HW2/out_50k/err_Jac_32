@@ -1,0 +1,131 @@
+[s008:66637] *** Process received signal ***
+[s008:66637] Signal: Segmentation fault (11)
+[s008:66637] Signal code: Address not mapped (1)
+[s008:66637] Failing at address: 0x2b1f0dec5840
+[s008:66634] *** Process received signal ***
+[s008:66634] Signal: Segmentation fault (11)
+[s008:66634] Signal code: Address not mapped (1)
+[s008:66634] Failing at address: 0x2ba0417f0840
+[s008:66635] *** Process received signal ***
+[s008:66635] Signal: Segmentation fault (11)
+[s008:66635] Signal code: Address not mapped (1)
+[s008:66635] Failing at address: 0x2b7b2e5c6840
+[s008:66644] *** Process received signal ***
+[s008:66644] Signal: Segmentation fault (11)
+[s008:66644] Signal code: Address not mapped (1)
+[s008:66644] Failing at address: 0x2ae3f19ee840
+[s008:66633] *** Process received signal ***
+[s008:66633] Signal: Segmentation fault (11)
+[s008:66633] Signal code: Address not mapped (1)
+[s008:66633] Failing at address: 0x2ba1626ab840
+[s008:66636] *** Process received signal ***
+[s008:66636] Signal: Segmentation fault (11)
+[s008:66636] Signal code: Address not mapped (1)
+[s008:66636] Failing at address: 0x2b51b61d1840
+[s008:66646] *** Process received signal ***
+[s008:66646] Signal: Segmentation fault (11)
+[s008:66646] Signal code: Address not mapped (1)
+[s008:66646] Failing at address: 0x2aafce771840
+[s008:66638] *** Process received signal ***
+[s008:66638] Signal: Segmentation fault (11)
+[s008:66638] Signal code: Address not mapped (1)
+[s008:66638] Failing at address: 0x2ba0081b6840
+[s008:66632] *** Process received signal ***
+[s008:66632] Signal: Segmentation fault (11)
+[s008:66632] Signal code: Address not mapped (1)
+[s008:66632] Failing at address: 0x2aea377a2840
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[s008:66642] *** Process received signal ***
+[s008:66642] Signal: Segmentation fault (11)
+[s008:66642] Signal code: Address not mapped (1)
+[s008:66642] Failing at address: 0x2b92a9f22840
+[s008:66645] *** Process received signal ***
+[s008:66645] Signal: Segmentation fault (11)
+[s008:66645] Signal code: Address not mapped (1)
+[s008:66645] Failing at address: 0x2b5121aae840
+[s018:147394] *** Process received signal ***
+[s018:147394] Signal: Segmentation fault (11)
+[s018:147394] Signal code: Address not mapped (1)
+[s018:147394] Failing at address: 0x2ac973822840
+[s008:66640] *** Process received signal ***
+[s008:66640] Signal: Segmentation fault (11)
+[s008:66640] Signal code: Address not mapped (1)
+[s008:66640] Failing at address: 0x2b3b6aa28840
+[s008:66643] *** Process received signal ***
+[s008:66643] Signal: Segmentation fault (11)
+[s008:66643] Signal code: Address not mapped (1)
+[s008:66643] Failing at address: 0x2abb6ab55840
+[s008:66639] *** Process received signal ***
+[s008:66639] Signal: Segmentation fault (11)
+[s008:66639] Signal code: Address not mapped (1)
+[s008:66639] Failing at address: 0x2aef8c06e840
+[s008:66641] *** Process received signal ***
+[s008:66641] Signal: Segmentation fault (11)
+[s008:66641] Signal code: Address not mapped (1)
+[s008:66641] Failing at address: 0x2b9d48bdd840
+[s018:147403] *** Process received signal ***
+[s018:147403] Signal: Segmentation fault (11)
+[s018:147403] Signal code: Address not mapped (1)
+[s018:147403] Failing at address: 0x2b423806e840
+[s018:147405] *** Process received signal ***
+[s018:147405] Signal: Segmentation fault (11)
+[s018:147405] Signal code: Address not mapped (1)
+[s018:147405] Failing at address: 0x2ba41d465840
+[s018:147409] *** Process received signal ***
+[s018:147409] Signal: Segmentation fault (11)
+[s018:147409] Signal code: Address not mapped (1)
+[s018:147409] Failing at address: 0x2ab63ec61840
+[s018:147408] *** Process received signal ***
+[s018:147408] Signal: Segmentation fault (11)
+[s018:147408] Signal code: Address not mapped (1)
+[s018:147408] Failing at address: 0x2b5b65a9e840
+[s018:147399] *** Process received signal ***
+[s018:147399] Signal: Segmentation fault (11)
+[s018:147399] Signal code: Address not mapped (1)
+[s018:147399] Failing at address: 0x2afee45ff840
+[s018:147398] *** Process received signal ***
+[s018:147398] Signal: Segmentation fault (11)
+[s018:147398] Signal code: Address not mapped (1)
+[s018:147398] Failing at address: 0x2b2ca09d2840
+[s018:147397] *** Process received signal ***
+[s018:147397] Signal: Segmentation fault (11)
+[s018:147397] Signal code: Address not mapped (1)
+[s018:147397] Failing at address: 0x2b251e5e1840
+[s018:147400] *** Process received signal ***
+[s018:147400] Signal: Segmentation fault (11)
+[s018:147400] Signal code: Address not mapped (1)
+[s018:147400] Failing at address: 0x2b27f8b18840
+[s018:147395] *** Process received signal ***
+[s018:147395] Signal: Segmentation fault (11)
+[s018:147395] Signal code: Address not mapped (1)
+[s018:147395] Failing at address: 0x2b67471be840
+[s018:147401] *** Process received signal ***
+[s018:147401] Signal: Segmentation fault (11)
+[s018:147401] Signal code: Address not mapped (1)
+[s018:147401] Failing at address: 0x2ad6d2248840
+[s018:147406] *** Process received signal ***
+[s018:147406] Signal: Segmentation fault (11)
+[s018:147406] Signal code: Address not mapped (1)
+[s018:147406] Failing at address: 0x2aca0732d840
+[s018:147396] *** Process received signal ***
+[s018:147396] Signal: Segmentation fault (11)
+[s018:147396] Signal code: Address not mapped (1)
+[s018:147396] Failing at address: 0x2b060cf13840
+[s018:147407] *** Process received signal ***
+[s018:147407] Signal: Segmentation fault (11)
+[s018:147407] Signal code: Address not mapped (1)
+[s018:147407] Failing at address: 0x2b530006e840
+[s018:147402] *** Process received signal ***
+[s018:147402] Signal: Segmentation fault (11)
+[s018:147402] Signal code: Address not mapped (1)
+[s018:147402] Failing at address: 0x2ab4f96c4840
+[s018:147404] *** Process received signal ***
+[s018:147404] Signal: Segmentation fault (11)
+[s018:147404] Signal code: Address not mapped (1)
+[s018:147404] Failing at address: 0x2ad3b9ffc840
+--------------------------------------------------------------------------
+mpirun noticed that process rank 2 with PID 0 on node s008 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
