@@ -1,3 +1,0 @@
-/mnt/d/ITU/HBM514_Parallel_Programming/Project/fbuild/CMakeFiles/rebuild_cache.dir
-/mnt/d/ITU/HBM514_Parallel_Programming/Project/fbuild/CMakeFiles/edit_cache.dir
-/mnt/d/ITU/HBM514_Parallel_Programming/Project/fbuild/CMakeFiles/a.dir

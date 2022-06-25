@@ -1,3 +1,0 @@
-Time: 1e-4: 7.56891e+09, 1e-7: 6358.58
-Iter: 1e-4: 0, 1e-7: 100001
-4 total processes killed (some possibly by mpirun during cleanup)

@@ -1,5 +1,0 @@
-/run/media/pival/E8BA3B54BA3B1E8E/ITU/HBM514_Parallel_Programming/HW2/build/CMakeFiles/edit_cache.dir
-/run/media/pival/E8BA3B54BA3B1E8E/ITU/HBM514_Parallel_Programming/HW2/build/CMakeFiles/GaussSeidel.dir
-/run/media/pival/E8BA3B54BA3B1E8E/ITU/HBM514_Parallel_Programming/HW2/build/CMakeFiles/LU.dir
-/run/media/pival/E8BA3B54BA3B1E8E/ITU/HBM514_Parallel_Programming/HW2/build/CMakeFiles/rebuild_cache.dir
-/run/media/pival/E8BA3B54BA3B1E8E/ITU/HBM514_Parallel_Programming/HW2/build/CMakeFiles/Jacobi.dir

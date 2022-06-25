@@ -1,3 +1,0 @@
-D:/ITU/HBM514_Parallel_Programming/Project/wbuild/CMakeFiles/a.dir
-D:/ITU/HBM514_Parallel_Programming/Project/wbuild/CMakeFiles/ALL_BUILD.dir
-D:/ITU/HBM514_Parallel_Programming/Project/wbuild/CMakeFiles/ZERO_CHECK.dir

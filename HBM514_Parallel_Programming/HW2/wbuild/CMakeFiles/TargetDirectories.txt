@@ -1,5 +1,0 @@
-D:/ITU/HBM514_Parallel_Programming/HW2/wbuild/CMakeFiles/GaussSeidel.dir
-D:/ITU/HBM514_Parallel_Programming/HW2/wbuild/CMakeFiles/LU.dir
-D:/ITU/HBM514_Parallel_Programming/HW2/wbuild/CMakeFiles/Jacobi.dir
-D:/ITU/HBM514_Parallel_Programming/HW2/wbuild/CMakeFiles/ALL_BUILD.dir
-D:/ITU/HBM514_Parallel_Programming/HW2/wbuild/CMakeFiles/ZERO_CHECK.dir
