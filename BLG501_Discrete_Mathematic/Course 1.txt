@@ -1,0 +1,38 @@
+Sets:
+    U Universal Sets
+    E: Any kind of set part of U (part of = C below bare)
+
+Steps:
+    1: Basis:           B set . as x part of B, x part of E
+    2: Set of rules:    for any x part of E, we can create a new x using a rule which is part of E
+    3: Closure:         any element of E should be in E after using any rule
+
+Induction:
+    B0 = B
+    B1 = B0 union rule(B0)
+    Bi+1 = Bi union rule(Bi)
+
+height:
+    h(x) = min(i|x part of Bi)
+
+Ex: Even number:
+    B = {0}
+    rule = n part of E => (n+2) part of E
+
+Ex: Well-formed formula
+    A: set of atomic proposition
+    S: set of operator (&, |, ~, ->, <->, ...)
+    U = (A union S)*
+
+    B = A
+    rules = [f1(x)=~x, f2(x,y)=(x&y), ...]
+
+
+
+Peano axioms:
+    Natural numbers set of N:
+        Basis: 0 part of N
+        Rules: for (n : B) succ(n) part of N
+        Concl: for any subset P in N, if 0 part of P, then P is equal to N
+
+        ! succ must be unique. succ can't return an already returned value. 0 can't be succ

@@ -1,0 +1,154 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{changepage}
+\usepackage{multicol}
+
+\newcommand{\congru}[3]{#1 \equiv #2\ (\text{mod}\ #3)}
+
+\begin{document}
+
+\begin{center}
+    \LARGE\textbf{BLG 501E – Discrete Mathematics}\\
+    \vspace{1em}
+    \Large\textbf{$\text{2}^{\text{nd}}$ Midterm Exam / Homework}\\
+    \large\textit{Valentin L'HOMEL - 922110009}
+\end{center}
+
+\section{Residue classes}
+\subsection{Calculate how many residue classes number 56 has.}
+
+\begin{adjustwidth}{2em}{}
+    $\varphi(56) = \varphi(7\times8)$\\
+    \hspace*{2.7em}$= \varphi(7)\times\varphi(8)$\\
+    \vspace{-0.5em}\\
+    $\varphi(7) = 7-1 = 6$, because 7 is a prime number\\
+    $\varphi(8) = \varphi(2^3) = 2^3(1-1/2) = 4$\\
+    \vspace{-0.5em}\\
+    $\varphi(56) = 6\times4 = 24$
+\end{adjustwidth}
+
+\vspace*{0.5em}\hspace*{-1.5em}56 has 24 residue classes.
+
+\subsection{List the residue classes of 56 by using residue classes of 8 and 7. Write down your steps.}
+
+The residue classes of 56 are all numbers which are equivalent to one of the member of the residue classes of 7 modulo 7 and equivalent to one of the member of the residue classes of 8 modulo 8.\\\vspace*{-0.7em}\\
+\hspace*{1em}$S_{56} = \forall a\in S_7, \forall b\in S_8\ \{ x\ |\ \congru{x}{a}{7} \wedge \congru{x}{b}{8} \}$\\\vspace*{-0.7em}\\
+Using the Chinese remainder theorem, we can write $x$ as the sum of one of the member of the residue classes of 7 times 8 times the inverse of 8 modulo 7 and one of the member of the residue classes of 8 times 7 times the inverse of 7 modulo 8.\\\vspace*{-0.7em}\\
+\hspace*{1em}$\congru{x}{a\times8\times\overline{8}_7 + b\times7\times\overline{7}_8}{56}$\\\vspace*{0em}\\
+\hspace*{2em}$S_7 = \{1,2,3,4,5,6\}$\\
+\hspace*{2em}$S_8 = \{1,3,5,7\}$\\
+\hspace*{2em}$\congru{8\times\overline{8}}{1}{7} \Rightarrow \overline{8}_7 = 1$\\
+\hspace*{2em}$\congru{7\times\overline{7}}{1}{8} \Rightarrow \overline{7}_8 = 7$\\
+
+\begin{tabular}{|c||c|c|c|c|c|c|}
+    \hline
+    $b\ \backslash\ a$ & 1 & 2 & 3 & 4 & 5 & 6 \\
+    \hline\hline
+    1 & 1 & 9 & 17 & 25 & 33 & 41 \\ 
+    \hline
+    3 & 43 & 51 & 3 & 11 & 19 & 27 \\
+    \hline
+    5 & 29 & 37 & 45 & 53 & 5 & 13 \\
+    \hline
+    7 & 15 & 23 & 31 & 39 & 47 & 55 \\
+    \hline
+\end{tabular}
+
+
+\section{Prove Euler-Fermat theorem}
+
+\begin{equation}
+    \gcd(a,m) = 1\text{ and }\congru{a^{\varphi(m)}}{1}{m}
+\end{equation}
+
+Let's define two sets $S$ and $S'$ containing respectively the residue classes of $m$ and the residue classes of $m$ multiplied by $a$.
+
+\vspace*{-0.5em}$$ S = \{x_1, x_2, ... x_{\varphi(m)}\} \hspace*{2em} S' = \{ax_1, ax_2, ... ax_{\varphi(m)}\} $$
+
+We know that the elements of $S$ composed all possible numbers which are relatively primes to $m$. Because $a$ is also relatively prime to $m$, the elements of $S'$ are all coprimes with $m$ as well.
+
+This implies that every element of $S'$ modulo $m$ are present in $S$.
+
+$$ \forall i,j \in \{0,...\varphi(m)\}, \congru{ax_i}{x_j}{m} $$
+
+$$ \congru{S'}{S}{m} $$\\\vspace*{-3.5em}\\
+$$ \congru{\prod_i^{\varphi(m)}{ax_i}}{\prod_i^{\varphi(m)}{x_i}}{m} $$\\\vspace*{-3em}\\
+$$ \congru{a^{\varphi(m)}\prod_i^{\varphi(m)}{x_i}}{\prod_i^{\varphi(m)}{x_i}}{m} $$
+
+As every $x_i$ is relatively prime to $m$, we can safely removes them from the equations, resulting to $$ \congru{a^{\varphi(m)}}{1}{m} $$
+
+\break\vfill
+\section{Permutations}
+
+\subsection{How many permutations of 6 people among 10 exists when a given person must be present}
+
+This is equivalent to the number of permutations of 5 people among 9, times 6 (possible positions of the mandatory person).
+
+$$ \frac{9!}{4!}\times6 = (9\times8\times7\times6\times5)\times6 = 90,720 $$
+
+There are 90,720 different arrangements possible with 6 people among a group of 10, when one of them must be selected.
+
+\subsection{How many permutations of 6 people among 10 exists when two given persons must be present}
+
+This is equivalent to the number of permutations of 4 people among 8, times 30 (possible positions of both mandatory persons $6\times5$).
+
+$$ \frac{8!}{4!}\times30 = (8\times7\times6\times5)\times30 = 50,400 $$
+
+There are 50,400 different arrangements possible with 6 people among a group of 10, when two of them must be selected.
+
+\subsection{How many permutations of 6 people among 10 exists when only one person among two on the group must be present, but not the other}
+
+This is equivalent to the number of permutation of 5 people (randomly selected) among 8 (excluding the random prohibited persons), times 6 (possible position of the mandatory person) times 2 (possible mandatory person).
+
+$$ \frac{8!}{3!}\times6\times2 = (8\times7\times6\times5\times4)\times12 = 80,640 $$
+
+There are 80,640 different arrangements possible with 6 people among a group of 10, with two mutually exclusive persons, when one of those two must be included.
+
+We can also consider it as the double of the substraction of the first two results (one mandatory person, but not two), which still produce the same result.
+
+
+\break\vfill
+\section{Prove the following equality}
+
+\begin{equation}
+    \sum_{k=0}^n{3^k\binom{n}{k}} = 4^n
+\end{equation}
+
+For $n=0$, we have the following:
+$$ 3^0\binom{0}{0} = 1, \hspace*{3em} 4^0 = 1 $$
+
+Now, let's assume the equation is true for a given value $n$, and prove it for $n+1$:
+
+\begin{align}
+    \sum_{k=0}^{n+1}{3^k\binom{n+1}{k}} &= \sum_{k=0}^{n+1}{3^k\left[\binom{n}{k}+\binom{n}{k-1}\right]}\\
+    &= \sum_{k=0}^{n+1}{3^k\binom{n}{k}}+\sum_{k=0}^{n+1}{3^k\binom{n}{k-1}}\\
+    &= \left[\sum_{k=0}^{n}{3^k\binom{n}{k}}+3^{n+1}\binom{n}{n+1}\right] + \left[3^0\binom{n}{-1}+\sum_{k=0}^{n}{3^{k+1}\binom{n}{k}}\right]\\
+    &= (4^n+3^{n+1}\times0) + (1\times0+3\times4^n) = 4 \times 4^n\\
+    \sum_{k=0}^{n+1}{3^k\binom{n+1}{k}} &= 4^{n+1}
+\end{align}
+
+
+\break\vfill
+\section{How many ways can the digits 0,1,2,3,4,5,6,7,8,9 be arranged so that no even digit is in its original position}
+
+We can find that by finding the total number of possibilities, and then removing every forbidden permutations.
+
+The forbidden possibilies includes every cases were 0 is at position 0, 2 is at position 2 except when 0 is also at position 0 (as it has already been removed), and so on for 4, 6 and 8.\\
+Using the inclusion-exclusion principle, we get:\vspace*{0.5em}
+
+\hspace*{0.0em}$ |S_0| = |S_2| = ... \hspace*{4.4em}= 9! $\\\vspace*{-1em}\\
+\hspace*{1.5em}$ |S_0 \cap S_2| = |S_0 \cap S_4| = ... = 8! $\\\vspace*{-1em}\\
+\hspace*{1.5em}$ |S_0 \cap S_2 \cap S_4| = ...\hspace*{3em}= 7! $\\\vspace*{-1em}\\
+\hspace*{1.5em}$ |S_0 \cap S_2 \cap S_4 \cap S_6| = ...\hspace*{0.9em}= 6! $\\\vspace*{-1em}\\
+\hspace*{1.5em}$ |S_0 \cap S_2 \cap S_4 \cap S_6 \cap S_8|\hspace*{0.9em}= 5! $\\\vspace*{-1em}
+
+$$\hspace{-13em}\left|\bigcup{S_{k}}\right|=\sum _{i=1}^{5}(-1)^{i-1}{\binom {5}{i}}(10-i)!$$
+$$\hspace{-1.3em} = \binom{5}{1}9! - \binom{5}{2}8! + \binom{5}{3}7! - \binom{5}{4}6! + \binom{5}{5}5! $$
+$$\hspace{4.6em} = 5\times362,880 - 10\times40,320 + 10\times5,040 - 5\times720 + 120 $$
+$$\hspace{-19em}\left|\bigcup{S_{k}}\right|=1,458,120$$
+
+The total number of ways to arrange the digits is therefore $10! - \left\lvert\bigcup{S_{k}}\right\rvert = 3,628,800 - 1,458,120 = 2,170,680$.
+
+\end{document}

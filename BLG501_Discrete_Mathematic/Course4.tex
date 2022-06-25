@@ -1,0 +1,207 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb}
+
+\begin{document}
+
+\newcommand{\congru}[3]{#1 \equiv #2\ (\text{mod}\ #3)}
+
+\[
+    \mathbf{test} \times 8
+    \iff \to \gets \in \forall \exists \exists! \nexists
+    \wedge \vee
+    \mapsto
+\]
+
+\section{Ackermann function}
+
+\[
+    A(m, n) =
+    \begin{cases}
+        A(0, n) = n+1 \\
+        A(m, 0) = A(m-1, 1) \\
+        A(m, n) = A(m-1, A(m, n-1))
+    \end{cases}
+\]
+
+\[
+    A(1, n) =
+    \begin{cases}
+        A(0, A(1,n-1)) \\
+        A(1, n-1) + 1 \\
+        A(1, 0) + n \\
+        A(0, 1) + n
+    \end{cases}
+    = n + 2
+\]
+
+\[
+    A(1,n) = n+2 \\
+    A(2,n) = 2n + 3 \\
+    A(3,n) = 2^n - 3
+\]
+
+\section{Arithmetic}
+
+\subsection{Division}
+
+a divides b $\iff b = a . c$
+
+$a | b \iff b/a \mod 0 == 0$
+
+\subsection{Primes}
+
+p is prime $\iff p > 1 \wedge \neg[\exists q(q \in {2,3...,p-1} \wedge q|p)]$
+
+\subsubsection{Theorem of arithmetic}
+
+$a \in N^+, a = p^{k_1}_1, ...$
+
+\subsection{Division algorithm}
+
+$a = d.q + r$
+
+\subsection{Greastest Common Dividor}
+\subsection{Least Common Multiple}
+
+$lcm(a,b) = \frac{|a.b|}{gcd(a,b)}$
+
+\section{Euclidean Algorithm (GCD)}
+
+$gcd(a,b) = gcd(b,c) \iff a > b \wedge a \mod b = c$
+
+$gcd(127, 37) = gcd(37, 16) = gcd(16, 5) = 1$
+
+$gcd(127, 35)) = gcd(37, 16) = gcd(16, 5) = 1$
+
+%Prove it => Prove that gcd(a,b) divides c
+%                       gcd(b,c) divides a
+%                    => gcd(a,b) = cd(b,c) <= gcd(b,c)
+%                       gcd(b,c) = cd(a,b) <= gcd(a,b)
+%                    => gcd(a,b) <= gcd(b,c) & gcd(b,c) <= gcd(ab) => gcd(a,b) == gcd(b,c)
+
+\section{Congruence}
+
+$\congru{a}{b}{m} \iff m | a-b \iff a = b + km \iff a\mod m = b\mod m$
+
+$\overrightarrow{w} + \max  $
+
+$\congru{ac}{bc}{m} \wedge gcd(c,m) = i \iff \congru{a}{b}{m/i}$
+
+\section{Linear Diophantine Equations}
+
+$ax + by = c \iff gcd(a,b) = d \wedge d|c$
+
+$ax + by = c \wedge a,b,c,x,y \in \mathbf{I} \iff x = (sc + bk)/d, y = (tc - ak)/d \wedge d = gcd(a,b) \wedge as + bt = c$
+
+$$ax + by = c \Rightarrow x = \frac{bk + cs}{\gcd(a,b)}, y = \frac{-ak + ct}{\gcd(a,b)} \iff \gcd(a,b) | c$$
+
+\if false
+172x + 20y = 1000
+gcd(172, 20) = 4
+
+4 = 12-8
+4 = 2*12-20
+4 = 2*(172-8*20)-20
+4 = 2*172 - 17*20
+
+s = 2, t = -17
+
+x = (2000 + 20k) / 4 = 500 + 5k
+y = (-17000 - 172k) / 4 = -4250 - 43k
+
+x > 0 => k > -100
+y > 0 => k < -98.84
+
+k=-99
+
+                    // 1, 0
+                    // 0, 1
+172 = 20 * 8 + 12,  // 1 - 8 * 0,   0 - 8 * 1
+20 = 12 * 1 + 8     // 0 - 1 * 1,   1 - 1 * -8
+12 = 8 * 1 + 4      // 1 - 1 * -1,  -8 - 1 * 9
+8 = 4 * 2 + 0       // 2,           -17
+
+
+\fi
+
+\section{Linear modulo}
+
+$\congru{ax}{b}{m}$
+
+$gcd(a,m) = 1 \wedge \exists! \bar{a} \wedge 0 < \bar{a} < m \Rightarrow \congru{a\bar{a}}{1}{m}$
+
+\if false
+19x = 37 mod 141
+
+141 = 7*19 + 8
+19 = 2*8 + 3
+8 = 2*3 + 2
+3 = 1*2 + 1
+
+1 = 3 - 2
+1 = 3 - (8-2*3)
+1 = -8 + 3*(19-2*8)
+1 = 3*19 - 7*(141-7*19)
+1 = 52*19 - 7*141
+
+\bar{a} = 52
+
+19*52*x = 37*52 mod 141
+x = 91 mod 141
+x = 91 + 141k
+\fi
+
+$gcd(a,m) = d \wedge$
+
+\if false
+ax = b (mod m) && gcd(a,b) = d
+Prove congruence implies d|b
+
+d | b
+=> a = dk1, b = dk2, m = dk3, gcd(k1,k3) = 1
+ax = b[m] => dk1x = dk2[dk3] => k1x = k2[k3]
+
+ax = b[m] => ax - my = b
+dk1x - dk2y = b
+d(k1x-k2y) = b => d | b
+\fi
+
+$$ \congru{ax}{b}{m} \Rightarrow x = \frac{km + bs}{\gcd(a,m)} \iff \gcd(a,m) | b $$
+
+\if false
+28𝑥 ≡ 14 𝑚𝑜𝑑21
+28 = 1*21 + 7
+21 = 3*7
+d = 7, s = 1, t = -1
+x = 3k + 2
+\fi
+
+\section{Chinese remainder theorem}
+
+$x = \sum_{i=1}^{n}{a_iM_iy_i} \wedge \congru{M_i y_i}{1}{m} \wedge m = \prod{m_i} \wedge M_i = m/m_i$
+
+$$ \congru{a_nx}{b_n}{m_n} ... $$
+
+\if false
+15x = 21 mod 48
+166x = 46 mod 22
+x = 5 mod 13
+
+5x = 7 mod 16
+    16 = 5*3 + 1
+        1 = 16 - 3*5
+-3*5x = -3*7 mod 16
+x = 11 mod 16
+
+83x = 23 mod 11
+    83 = 7*11 + 6
+    11 = 1*6+5
+    6 = 1*5+1
+        1 = 2*83-15*11
+2*83x = 2*23 mod 11
+x = 2 mod 11
+\fi
+
+\end{document}

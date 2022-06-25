@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb}
+
+\begin{document}
+Inline: \(x^2 = 0\), $x^2 = 0$, \begin{math}x^2 = 0\end{math}
+
+Outline:
+\[ x^2 = 0 \]
+\begin{displaymath} x^2 = 0 \end{displaymath}
+\begin{equation} x^2 = 0 \end{equation}
+
+\[
+    \lim_{h \to 0 } \frac{f(x+h)-f(x)}{h}, \sum_{n = 1}^{\infty}
+\]
+
+Useful:
+\[\alpha, \beta, \delta, \epsilon, \rho, \theta, \lambda, \sigma, \infty\]
+\[\cup, \cap, \subset, \supset, \subseteq, \wedge, \vee\]
+\[\iff, \mapsto, \longmapsto, \to, \gets\]
+\[\forall, \exists, \nexists, \neg, \in, \notin, \equiv, \cong\]
+
+\section{Relation}
+
+Reflexives: $\forall x [x \in R \to (x,x) \in R]$
+
+Symmetric: $\forall x \forall y [(x,y) \in R \to (y,x) \in R]$
+
+Antisymmetric: $\forall x \forall y [(x,y) \in R \wedge (y,x) \in R \to x=y]$
+
+Transitive: $\forall x \forall y \forall z [(x,y) \in R \wedge (y,z) \in R \to (x,z) \in R]$
+
+
+
+\section{Ordering}
+
+Strict\ order\ relation $\iff$ Irreflexive, Asymmetric, Transitive% => 
+
+Preorder / Quasi-order\ relation $\iff$ Reflexive, Transitive, !Asymmetric, !Antisymetric% => 
+
+Equivalence\ relation $\iff$ Reflexive, Transitive, Symmetric% =>
+
+Partial\ order\ relation $\iff$ Reflexive, Antisymmetric, Transitive% => (\geq >=)
+
+
+\section{Comparability}
+
+A and B of a poset $(S,\preccurlyeq )$ are comparable $\iff$ $a \preccurlyeq b$ or $b \preccurlyeq a$
+
+A set ($S, \preccurlyeq$) is totally orderer or linearly ordered $\iff$ $\forall a \forall b [a \preccurlyeq b]$ $iff$ S is a chain
+
+Lexicographic order $\iff$
+
+\section{Hasse diagrams}
+
+Hasse diagram is a visual rep of a partial order set, removing edges implied by reflexivity, antisymetry, transitivity
+
+To represent a set: Draw the edges, removing the loops, remove edges for which there are intermediary
+
+\section{Max Min elements}
+
+Minoran / Lower bound: m part of E is minoran of A $\iff \forall a \in A \implies m \leq x$
+
+Minimal: m part of A is minimal of A $\iff \forall a \in A \implies \neg (x < m)$
+
+Minimum / Least element: is a minimal (if only one minimal)
+
+\section{Well-ordered set and Noetherian-ordered set}
+
+Noetherian-ordered set $\iff$ every non-empty subset have at least one minimal
+
+Well-ordered set $\iff$ is total ordering and every subset have a minimum.
+
+\section{Induction}
+
+Prove P(min), $\forall x \in E, P(x) \implies P(succ(x))$
+
+Ex:
+\[n \geq 4, 2^n < n!\]
+\[2^4 < 4! \iff 16 < 24\]
+\[2^(k+1) < (k+1)! \iff 2^k * 2 < k! * k \iff 2^k < k! \wedge 2 < k\]
+
+Transfinite Induction
+
+Prove $\forall m \in minimals, P(m)$, $\forall x \in E, [\forall y \in \{y|y < x\}, P(y)] \implies P(x)$
+
+Ex: Every natural number is a composite of prime number
+
+
+Pigeonhole principle
+
+$set [2n]. \exists p,q \in X. p = 2^a * q, a \in N$
+
+$\forall x \in N+, \exists! (r,y) \in N x N, x = 2^r*y \wedge y=2p+1 \wedge p\in N \wedge y \leq x$
+
+Assume: $\forall m \in \{m|m<x\} \implies m=2^r*y$
+
+\end{document}
